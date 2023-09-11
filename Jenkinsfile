@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Three') {
             steps {
-                emailext body: 'This is an ex mail', subject: 'Hi', to: 'vankat1520@gmail.com'
+                mail bcc: '', body: 'Hello', cc: '', from: '', replyTo: '', subject: 'Hey', to: 'vankat1520@gmail.com'
             }
         }
     }
