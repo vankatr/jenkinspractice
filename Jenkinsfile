@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Three') {
             steps {
-                echo "this is three"
+                emailext body: 'This is an ex mail', subject: 'Hi', to: 'vankat1520@gmail.com'
             }
         }
     }
